@@ -20,7 +20,7 @@ namespace CarClassLibrary
 
         }
 
-        public Car(string makeName, string modelName, int priceAmount)
+        public Car(string makeName, string modelName, decimal priceAmount)
         {
             Make = makeName;
             Model = modelName;
@@ -29,6 +29,11 @@ namespace CarClassLibrary
 
         }
 
+        override public string ToString()
+        {
+            return $"Make : {Make} Model : {Model} Price :{Price}";
+
+        }
 
 
     }
